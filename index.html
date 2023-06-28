@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="./javascript.js">
+    <link rel="stylesheet" href="./style.css">
     <script src="./javascript.js" defer></script>
 </head>
 <body>
-    <form action="post">
-        <input type="search" name="location" id="location">
-        <button>Submit</button>
-    </form>
-    <h2></h2>
-    <span class="type">F:</span>
-    <span class= "temp"></span></p>
+    <nav>
+        <h1>Weather App</h1>
+        <form action="post">
+            <input type="search" name="location" id="location" placeholder="Location Here">
+            <button>Submit</button>
+        </form>
+        <button class="degree-btn">C/F</button>
+    </nav>
+    <main>   
+         <h2></h2>
+         <div class="temp-div">
+            <span class="type">F:</span>
+            <span class= "temp"></span>
+         </div>
+         <div>
+            <img class="icon" src="#" alt="Forecast Gif">
+            <Span class="condition"></Span>
+         </div>
+         <p class = "loading">loading ...</p>
+    </main>
+    <footer>Natevoyages@2023</footer>
 </body>
 </html>
